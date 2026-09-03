@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>aimama</title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/4e6b50c3ce.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="wrapper">
+    
+    <div class="right">
+      <div class="panel login">
+        <img class="all-logo" src="alllogo.png" alt="aimama">
+        <img id="logo" src="aimama-logo.png" alt="logo">
+        
+        <p> ✨Mariam✨ </p>
+        <br>
+        <p> Enter your feedbackk
+           here</p>
+        <br>
+        <!-- FormSubmit emails submissions until a custom backend is available. -->
+        <h2 id="feedback-heading">Feedback</h2>
+        <form action="https://formsubmit.co/narutomaki702@gmail.com" method="POST" id="login-form" aria-labelledby="feedback-heading">
+          <input type="hidden" name="_subject" value="New aimama feedback">
+          <input type="hidden" name="_template" value="table">
+          <div class="name-field">
+
+  
+            <input
+              id="name"
+              class="input-box"
+              type="text"
+              name="feedback"
+              required
+              placeholder="Enter your feedback">
+          </div>
+          <input
+            class="button"
+            type="submit"
+            value="Send feedback">
+          <div class="divider">
+            <div class="line"></div>
+            <p>OR</p>
+            <div class="line"></div>
+          </div>
+         
+          <a class="forgot" href="#" aria-label="Forgot name?"></a>
+        </form>
+      </div>
+      <div class="panel signup">
+        <picture class="meta-logo">
+          <source media="(prefers-color-scheme: dark)" srcset="allmetablack.png">
+          <img src="allmeta.png" alt="Meta">
+        </picture>
+      </div>
+    
+    </div>
+  </section>
+  <footer>
+    <p>&copy;2026aimama</p>
+  </footer>
+  <script>
+    const loginForm = document.querySelector('#login-form');
+  </script>
+</body>
+</html>
